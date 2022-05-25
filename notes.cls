@@ -90,7 +90,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \lhead{\@docauthorname}
-\rhead{\@classtitle\space\@titletext}
+\rhead{\@classtitle\space\space\@titletext}
 \rfoot{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 
