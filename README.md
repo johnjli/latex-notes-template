@@ -25,6 +25,7 @@ Download the notes.cls file and include it the folder where you will be writing 
 \end{codesection}
 ```
 Rendered form:
+
 ![Code block](/images/codeblock.jpg?raw=true "Python code block")
 
 ### Title Page
@@ -47,4 +48,5 @@ And include `\maketitlepage` in the document section:
 \end{document}
 ```
 Rendered form:
+
 ![Title page](/images/titlepage.jpg?raw=true "Example title page")
