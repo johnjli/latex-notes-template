@@ -21,8 +21,12 @@
 \RequirePackage{tikz}
 \RequirePackage[framemethod=tikz]{mdframed}
 \RequirePackage{xkeyval}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{multirow}
 
 \usetikzlibrary{trees}
+
+\renewcommand\arraystretch{1.3}
 
 \def\@docauthorname{}
 \def\@docname{\jobname.tex}
@@ -89,8 +93,8 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\lhead{\@docauthorname}
-\rhead{\@classtitle\space\space\@titletext}
+\lhead{\@classtitle}
+\rhead{\@titletext}
 \rfoot{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 
@@ -152,7 +156,7 @@
     \begin{enumerate}[label=\quad\quad, leftmargin=*]
 }{\end{enumerate}}
 
-\newcommand{\createtitlepage}{
+\newcommand{\maketitlepage}{
     \thispagestyle{plain}
     \vspace*{1cm}
     {\large{\@schoolname}}\\
@@ -169,3 +173,13 @@
     \vfill
     \newpage
 }
+
+\newtcolorbox{solutionbox}[1][]{%
+    sharp corners,
+    enhanced,
+    colback=white,
+    attach title to upper,
+    #1
+}
+
+\newcommand{\pageline}{\par\noindent\rule{\textwidth}{0.5pt}}
