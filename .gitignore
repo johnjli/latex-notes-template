@@ -1,5 +1,6 @@
 .DS_store
 test.tex
+notes.tex
 reference.cls
 *.aux
 *.fdb_latexmk

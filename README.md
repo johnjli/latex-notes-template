@@ -35,9 +35,10 @@ To create the title page you will need to fill out some information via commands
 \schoolName{My University}
 \docAuthor{John J Li}
 \titleText{My Latex Notes}
-\classTitle{My Class on Latex}
-\classProf{Dr. My Professor}
+\classTitle{My Class}
+\classProf{My Professor}
 \classTime{Thues/Thurs 1:30pm}
+\notesSummary{Include a summary of your notes or what you've learned in the lecture.}
 ```
 And include `\maketitlepage` in the document section:
 ```latex

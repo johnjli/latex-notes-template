@@ -183,3 +183,4 @@
 }
 
 \newcommand{\pageline}{\par\noindent\rule{\textwidth}{0.5pt}}
+\newcommand{\ubar}[1]{\text{\b{$#1$}}}
